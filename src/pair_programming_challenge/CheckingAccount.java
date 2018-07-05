@@ -18,4 +18,8 @@ public class CheckingAccount extends BankAccount {
 		this.serviceFee = serviceFee;
 	}
 	
+	public double yearlyServiceFee() {
+		return this.serviceFee * 12;
+	}
+	
 }
