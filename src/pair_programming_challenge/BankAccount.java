@@ -2,6 +2,7 @@ package pair_programming_challenge;
 
 public class BankAccount {
 	
+	// required data
 	String name;
 	int acctNumber;
 	String branchLocation;
@@ -55,6 +56,7 @@ public class BankAccount {
 		this.totalBalance = totalBalance;
 	}
 	
+	// required method
 	public double applyTransaction(double amount) {
 		
 		return totalBalance;

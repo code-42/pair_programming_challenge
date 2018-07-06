@@ -2,6 +2,7 @@ package pair_programming_challenge;
 
 public class CheckingAccount extends BankAccount {
 	
+	// required data
 	double serviceFee;
 
 	public CheckingAccount(String name, int acctNumber, String branchLocation, double totalBalance, double serviceFee) {
@@ -18,6 +19,7 @@ public class CheckingAccount extends BankAccount {
 		this.serviceFee = serviceFee;
 	}
 	
+	// required method
 	public double yearlyServiceFee() {
 		return this.serviceFee * 12;
 	}

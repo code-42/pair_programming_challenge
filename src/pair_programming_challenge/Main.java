@@ -8,8 +8,6 @@ public class Main {
 		
 		double balance = bankAccount.getTotalBalance();
 		System.out.println(balance);
-		
-		
 
 	}
 

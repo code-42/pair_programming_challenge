@@ -2,7 +2,10 @@ package pair_programming_challenge;
 
 public class Transaction extends BankAccount {
 	
+	// minimum data
 	double transactionAmount;
+	double balanceBeforeTransaction;
+	double balanceAfterTransaction;
 
 	public Transaction(String name, int acctNumber, String branchLocation, double totalBalance, double transactionAmount) {
 		super(name, acctNumber, branchLocation, totalBalance);
@@ -13,6 +16,19 @@ public class Transaction extends BankAccount {
 		return transactionAmount;
 	}
 
+	// two base types of transactions
+	// deposit
+	public double deposit(double depositAmount) {
+		this.balanceAfterTransaction = this.balanceBeforeTransaction + depositAmount;
+		return this.balanceAfterTransaction;
+	}
+	
+	// withdraw
+	public double withdraw(double withdrawAmount) {
+		this.balanceAfterTransaction = this.balanceBeforeTransaction - withdrawAmount;
+		return this.balanceAfterTransaction;
+	}
+	
 	public void setAmount(double transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}

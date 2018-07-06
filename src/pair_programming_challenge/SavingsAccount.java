@@ -2,6 +2,7 @@ package pair_programming_challenge;
 
 public class SavingsAccount extends BankAccount {
 	
+	// required data
 	double interestRate;
 
 	public SavingsAccount(String name, int acctNumber, String branchLocation, double totalBalance, double interestRate) {
@@ -18,6 +19,7 @@ public class SavingsAccount extends BankAccount {
 		this.interestRate = interestRate;
 	}
 	
+	// required method
 	public void addInterest() {
 		
 		double interest = getTotalBalance() * interestRate / 100;
